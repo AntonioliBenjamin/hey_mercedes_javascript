@@ -1,9 +1,16 @@
 if (process.env.COMMAND === "weather") {
-    console.log("40° today");
+    const weather = require("./weather");
+    weather;
+
 } else if (process.env.COMMAND === "address") {
-    console.log("241 chemin du bout de code");
+    const address = require("./address");
+    address;
+
 } else if (process.env.COMMAND === "quoteday") {
-    console.log("You see in this world there's two kinds of people, my friend. Those with loaded guns, and those who dig. You dig.");
+    const quoteday = require("./quoteday");
+    quoteday;
+
 } else {
-    console.log("Désolé, je n'ai pas compris.");
+    const iDontUnderstand = require("./i_dont_understand");
+    iDontUnderstand;
 };
